@@ -1,0 +1,2 @@
+
+- separate rack and unit tests into different rakefile tasks so that we can run only unit tests in isolation
