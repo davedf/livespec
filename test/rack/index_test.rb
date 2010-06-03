@@ -1,6 +1,4 @@
-require File.expand_path(File.dirname(__FILE__)+"/../../src/livespec_app")
-require 'test/unit'
-require 'rack/test'
+require (File.dirname(__FILE__)+"/helper")
 
 class TestIndex < Test::Unit::TestCase
 	include Rack::Test::Methods
