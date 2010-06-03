@@ -1,7 +1,7 @@
 require 'rubygems'
-require 'sinatra'
-
-get '/hi' do
-  "Hello World!"
+require 'sinatra/base'
+class LiveSpecApp < Sinatra::Base
+	get '/hi' do
+  		"Hello World From Live Spec!"
+	end
 end
-
