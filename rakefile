@@ -9,11 +9,13 @@ task :test => [:unit_test, :rack_test]
 
 
 Rake::TestTask.new(:unit_test) do |t|
-   	t.test_files = FileList['test/unit/*_test.rb']
+   	t.libs << "src"
+	t.test_files = FileList['test/unit/*_test.rb']
     	t.verbose = true
 end
 
 Rake::TestTask.new(:rack_test) do |t|
-   	t.test_files = FileList['test/rack/*_test.rb']
+   	t.libs << "src"
+	t.test_files = FileList['test/rack/*_test.rb']
     	t.verbose = true
 end
