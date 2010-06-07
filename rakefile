@@ -20,3 +20,10 @@ Rake::TestTask.new(:rack_test) do |t|
 	t.test_files = FileList['test/rack/*_test.rb']
     	t.verbose = true
 end
+
+desc "run the server"
+task :run => [:test] do |t|
+	require "src/livespec_app.rb"
+	LiveSpecApp.run!
+end
+
