@@ -1,9 +1,12 @@
 require 'rubygems'
 require 'sinatra/base'
+require "src/regexRouteFilter.rb"
+
 class LiveSpecApp < Sinatra::Base
-	before do
+  register Sinatra::RegexpRouteFilter
+	before_with_regexp(/^((?!\/config).)*$/) do 
 		if (@configuration.nil?)
-			request.path_info = '/config'
+		  redirect '/config', 301
 		end
 	end
 	get '/config' do
