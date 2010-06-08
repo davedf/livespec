@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra/base'
-require "src/regexRouteFilter.rb"
+require (File.dirname(__FILE__)+ "/regexRouteFilter")
 
 class LiveSpecApp < Sinatra::Base
   register Sinatra::RegexpRouteFilter
