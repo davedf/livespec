@@ -1,0 +1,39 @@
+Getting Started
+===============
+
+1. Get a login to http://github.com/
+2. Fork http://github.com/gojko/livespec you will now have a url like 
+
+	http://github.com/your-login-name/livespec
+
+3. Clone your fork to create a local repository
+
+	git clone https://davedf@github.com/your-login-name/livespec.git
+
+4. Add gojko's branch as a remote (this will be the effective trunk)
+
+	git remote add gojko git://github.com/gojko/livespec.git
+
+5. Watch Gojko's branch on http://github.com/gojko/livespec
+	This means you will get pull requests
+	
+6. Run the site using 
+	rake run
+	
+	http://localhost:4567
+	
+When you get a pull request
+===========================
+
+1. check the status of your clone
+	git status
+	
+2. add/or checkout until your clone is clean
+
+3. pull changes from gojkos branch
+
+git pull gojko master
+
+4. push the changes to your fork on github
+
+git push origin master
