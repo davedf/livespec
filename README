@@ -8,7 +8,7 @@ Getting Started
 
 3. Clone your fork to create a local repository
 
-	git clone https://davedf@github.com/your-login-name/livespec.git
+	git clone https://your-login-name@github.com/your-login-name/livespec.git
 
 4. Add gojko's branch as a remote (this will be the effective trunk)
 
@@ -37,3 +37,33 @@ git pull gojko master
 4. push the changes to your fork on github
 
 git push origin master
+
+
+When you want to get your changes back to GitHub
+================================================
+
+1. get the current status
+
+git status
+
+2. add any new files to the change list
+
+git add file-name ...
+
+3. Add any changed files to the change list and commit
+
+git add file-name
+...
+git commit -m"message"
+
+or
+
+commit -a -m"message"
+
+to commit all changed files
+
+4. push the changes to your fork on github
+
+git push origin master
+
+If you want the changes to be pulled, send a pull request on github
