@@ -1,7 +1,10 @@
 Getting Started
 ===============
 
+0. Ask Chuck Norris for permission
+
 1. Get a login to http://github.com/
+
 2. Fork http://github.com/gojko/livespec you will now have a url like 
 
 	http://github.com/your-login-name/livespec
