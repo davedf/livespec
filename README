@@ -67,3 +67,7 @@ to commit all changed files
 git push origin master
 
 If you want the changes to be pulled, send a pull request on github
+
+
+When Merging
+============
